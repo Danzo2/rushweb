@@ -15,7 +15,7 @@ h1 {
 	font-size: 3em;
 	font-style: italic;
 	color: white;
-	animation: fadeInText ease 3s;
+	animation: fadeInText ease-in 3s;
 	animation-iteration-count: 1;
 	animation-fill-mode: forwards;
 }
@@ -23,18 +23,24 @@ h1 {
 	0% {
 		color: rgba(0, 0, 0, 0);
 	}
-	100% {
+	99% {
 		color: white;
 	}
 }
 
 a {
-	font-family: "Noto Sans", Arial, Helvetica, sans-serif;
-	font-weight: bold;
+	font-family: "Roboto", Arial, Helvetica, sans-serif;
+	font-weight: 300;
+	font-size: 26px;
 	text-decoration: none;
-	animation: fadeInText ease 3s;
+	color: white;
+	animation: fadeInText ease-in 3s;
 	animation-iteration-count: 1;
 	animation-fill-mode: forwards;
+}
+
+a:hover {
+	color: #FFFF99;
 }
 
 .container {
@@ -59,7 +65,9 @@ a {
 }
 
 .button {
-	display: inline;
+	display: inline-block;
 	margin: 5px;
-	color: black;
+	margin-left: 20px;
+	margin-right: 20px;
+	width: 100px;
 }
